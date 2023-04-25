@@ -8,4 +8,8 @@ test.describe("navigation", ()=>{
     test('main navigation', async ({page})=>{
         await expect(page).toHaveURL('https://playwright.dev/');
     });
+
+    test('test title navigation', async ({page})=>{
+        await expect(page).toHaveTitle(/Playwright/);
+    });
 })
