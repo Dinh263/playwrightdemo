@@ -11,6 +11,6 @@ test.describe("navigation", ()=>{
 
     test('test title navigation', async ({page})=>{
         await expect(page).toHaveTitle(/Playwright/);
-        expect(true).toBeTruthy();
+       
     });
 })
